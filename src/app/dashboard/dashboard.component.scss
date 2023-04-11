@@ -1,0 +1,31 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a{
+    height: 20rem;
+    width: 20rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    // color: aqua;
+}
+
+li a:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.food-name{
+justify-content: center;
+text-align: center;
+color: crimson;
+font-weight: 500;
+}
