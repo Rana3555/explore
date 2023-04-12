@@ -2,12 +2,16 @@
 <ul>
     <li *ngFor="let food of foods">
         <a>
-        <img src="{{ food.imageUrl }}" alt="food image">
-        <div class="content">
-            <h4 class="food-name">
-                {{food.name}}
-            </h4>
-        </div>
+            <img src="{{ food.imageUrl }}" alt="food image">
+            <div class="content">
+                <h4 class="food-name">
+                    {{food.name}}
+                </h4>
+            </div>
+            <div class="star">
+                <star-rating [value]="5" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px"
+                    [readonly]="false" (rate)="onRate($event)"></star-rating>
+            </div>
         </a>
     </li>
 </ul>
